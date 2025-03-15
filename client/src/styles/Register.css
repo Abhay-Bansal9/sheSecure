@@ -1,0 +1,241 @@
+/* Register page styles */
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f7fa;
+  padding: 2rem;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 650px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.register-header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #7b68ee;
+  margin-bottom: 1.5rem;
+}
+
+.register-header .logo i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.register-header h2 {
+  font-size: 1.75rem;
+  color: #333344;
+  margin-bottom: 0.5rem;
+}
+
+.register-header p {
+  color: #7b7b8a;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #d32f2f;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Steps indicator */
+.steps-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #eaedf2;
+  color: #7b7b8a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s;
+}
+
+.step.active .step-number {
+  background-color: #7b68ee;
+  color: white;
+}
+
+.step.completed .step-number {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.step-label {
+  font-size: 0.85rem;
+  color: #7b7b8a;
+  font-weight: 500;
+}
+
+.step.active .step-label {
+  color: #333344;
+}
+
+.step-connector {
+  flex: 1;
+  height: 2px;
+  background-color: #eaedf2;
+  margin: 0 1rem;
+  margin-bottom: 2rem;
+  max-width: 100px;
+}
+
+/* Form styles */
+.register-form {
+  margin-bottom: 1.5rem;
+}
+
+.section-info {
+  margin-bottom: 1.5rem;
+  color: #7b7b8a;
+  font-size: 0.95rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333344;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #eaedf2;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #7b68ee;
+  box-shadow: 0 0 0 3px rgba(123, 104, 238, 0.1);
+}
+
+/* Emergency contact styles */
+.emergency-contact {
+  background-color: #f9f9fd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.emergency-contact h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+  color: #333344;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #7b68ee;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #6a57d2;
+}
+
+.btn-primary:disabled {
+  background-color: #b3a8f8;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: #f5f7fa;
+  color: #333344;
+  border: 1px solid #eaedf2;
+}
+
+.btn-secondary:hover {
+  background-color: #eaedf2;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Login link */
+.login-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.login-link a {
+  color: #7b68ee;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+} 
